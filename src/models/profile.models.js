@@ -13,7 +13,9 @@ const profileSchema = new Schema({
     ref: 'Artist',
     required: true,
   },
-});
+},
+  { versionKey: false }
+);
 
 const Profile = model('Profile', profileSchema);
 

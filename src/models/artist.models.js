@@ -15,7 +15,9 @@ const artistSchema = new Schema({
     type: Boolean,
     default: true,
   },
-});
+},
+  { versionKey: false }
+);
 
 const Artist = model('Artist', artistSchema);
 

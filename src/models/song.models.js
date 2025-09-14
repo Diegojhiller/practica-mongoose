@@ -33,7 +33,9 @@ const songSchema = new Schema({
     type: Boolean,
     default: true,
   },
-});
+},
+  { versionKey: false }
+);
 
 const Song = model ('Song', songSchema);
 
