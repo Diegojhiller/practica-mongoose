@@ -7,16 +7,14 @@ const artistSchema = new Schema({
     trim: true,
     unique: true,
   },
-  profile: {
-    type: Schema.Types.ObjectId,
-    ref: 'Profile',
-  },
   isActive: {
     type: Boolean,
     default: true,
   },
 },
-  { versionKey: false }
+  { 
+    versionKey: false 
+  }
 );
 
 const Artist = model('Artist', artistSchema);

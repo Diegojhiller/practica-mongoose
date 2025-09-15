@@ -20,7 +20,9 @@ const albumSchema = new Schema({
     default: true,
   },
 },
-  { versionKey: false }
+  { 
+    versionKey: false 
+  }
 );
 
 const Album = model ('Album', albumSchema);

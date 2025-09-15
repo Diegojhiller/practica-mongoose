@@ -12,9 +12,12 @@ const profileSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'Artist',
     required: true,
+    unique: true,
   },
 },
-  { versionKey: false }
+  {
+     versionKey: false 
+  }
 );
 
 const Profile = model('Profile', profileSchema);
